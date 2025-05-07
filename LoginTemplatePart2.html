@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Part 2</title>
+    <style>
+        *,body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(241, 234, 219);
+        }
+        fieldset{
+            display: flex;
+            flex-direction: row;
+            width: 1000px; 
+            height: 480px;
+        }
+        .fs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 86vh;
+        }
+        #section1{
+            width: 48%;
+            padding: 10px;
+            background-color: rgb(40, 40, 40);
+        }
+        #section2{
+            border : 1px solid white;
+            border-top:10px;
+            border-right:20px;
+            width: 48%;
+            padding: 10px;
+            background-color :rgb(40, 40, 40);
+        }
+        #Text1{
+            text-align: center;
+            margin : 130px 0px;
+            font-size: 45px;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+        }
+        #Text2{
+            height: 18.4px;
+            width: 253.5px;
+            background-color: transparent;
+            text-align: center;
+            margin : 20px 100px;
+            color: white;
+            font-size: 26px;
+        }
+        #Text3{
+            background-color: transparent;
+            text-align: center;
+            margin: 10px 100px;
+            color: white;
+            font-size: x-small;
+            margin-bottom: 40px;
+        }
+        #idOfCustomer{
+            background-color: transparent;
+            text-align: center;
+            margin: 13px 100px;
+            height: 40px;
+            width: 270px;
+            border-radius: 5px;
+            border-color: white;
+        }
+        input::placeholder{
+            text-align: left;
+            font-size: larger;
+            color: white;
+
+        }
+        #radio{
+            margin: 0px 100px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+        }
+        p{
+            background-color: transparent;
+            color: white;
+            margin:-20px 130px;
+            width: 250px;
+        }
+        button{
+            margin : 15px 100px;
+            height: 50px;
+            width: 300px;
+            background-color: rgb(15, 91, 244);
+            border-radius:10px ;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        input:focus::placeholder{ /*This is to despiar the placeholder*/
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="fs">
+        <fieldset>
+            <div id="section1">
+                <pre id="Text1">Welcome 
+        Back...</pre>
+            </div>
+            <div id="section2">
+                <p id="Text2">Create Your Account</p>
+                <p id="Text3">This is to create a new account</p>
+                <input type="text" placeholder="Name" id="idOfCustomer" style="color: white;text-align: left;padding-left: 10px;" required>
+                <input type="text" placeholder="Email Id" id="idOfCustomer" style="color: white;text-align: left;padding-left: 10px;" required>
+                <input type="text" placeholder="PassWord" id="idOfCustomer" style="color: white;text-align: left;padding-left: 10px;" required><br><br>
+                <input type="checkbox" id="radio">
+                <p onclick="document.getElementById('myCheckbox').click();">I Have accpeted the terms and condition</p><br><br>
+                <button>SUBMIT</button>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+    <style>
+        body{
+            background-color: rgb(241, 234, 219);
+        }
+        fieldset{
+            text-align: center;
+            width: 700px;
+            height: 400px;
+            margin: 100px 360px;
+            padding: 10px 0px;
+            background-color: rgb(40, 40, 40);
+        }
+        table{
+            padding-left:155px;
+            padding-bottom: 30px;
+        }
+        tr{
+            padding: 0px 20px;
+        }
+        input{
+            font-size: 15px;
+        }
+        button{
+            font-size: 20px;
+            width: 160px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1 style="color: white;">FeedBack Form</h1>
+        <p style="color: white;">Fill in the blank below to help us to make MusicUp better</p>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Name" id="Name"></td>
+                <td><input type="text" placeholder="Mobile number" id="MobileNumber"></td>
+            </tr>
+            <tr>
+                <td><input type="Email Id" placeholder="Email Id" id="EmailId"></td>
+                <td><input type="text" placeholder="Subject" id="Subject"></td>
+            </tr>
+        </table>
+        <textarea cols="60" rows="8" placeholder="Suggestion/FeedBack"></textarea><br><br>
+        <a href="MainPageTemplate.html">
+            <button id="Submit">SUBMIT -></button>
+        </a>
+    </fieldset>
+</body>
+</html>

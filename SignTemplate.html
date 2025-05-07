@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *,body{
+            margin:0px;
+            padding: 0px;
+        }
+        #Contrainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 88vh;
+        }
+        #fs{
+            width: 500px; 
+            height: 640px;
+        }
+        h3{
+            margin: 70px 0px;
+            font-size: 35px;
+            color: rgb(95, 94, 94);
+            color: white;
+        }
+        p{
+            text-align: center;
+            margin-top: -60px;
+            font-size: 12px;
+            color: white;
+        }
+        input{
+            margin:30px 170px;
+            height: 25px;
+            width: 250px;
+            font-size: 20px;
+            border-radius: 5px;
+            border-top:10px ;
+            border-left: 10px;
+            border-right: 10px;
+            padding: 0px 10px;
+        }
+        button{
+            margin: 20px 230px;
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(15, 91, 244) ;
+            color: white;
+        }
+        #checkbox{
+            margin : 10px 130px;
+        }
+        #RM{
+            margin: -30px -50px;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        #googleImage{
+            height: 30px;
+            width: 30px;
+            margin: 65px 170px;
+        }
+        #InstagramLogo{
+            height: 30px;
+            width: 30px;
+            margin:65px -130px;
+        }
+        #su{
+            float: right;
+            margin: 70px 110px;
+            font-size: 20px;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(241, 234, 219);">
+    <div id="Contrainer">
+        <fieldset id="fs" style="background-color: rgb(40, 40, 40);">
+            <h3 style="text-align: center;">Sign Up</h3>
+            <p>Sign Up to continue</p>
+            <input type="text"  placeholder="Name" required>
+            <input type="email"  placeholder="Email Id" required>
+            <input type="password"  placeholder="Password" required>
+            <button>Sign Up</button>
+            <input type="checkbox" id="checkbox" required><p id="RM">Remember Me</p>
+            <img src="Images/google.png" alt="logo of google" id="googleImage">
+            <img src="Images/instagram.png" alt="logo of insta" id="InstagramLogo">
+            <p id="su">Sign Up using Them</p>
+        </fieldset>
+    </div>
+</body>
+</html>

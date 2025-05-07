@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        *,body{
+            margin: 0px;
+            padding: 0px;
+        }
+        h3{
+            padding: 30px 80px;
+            font-size: 25px;
+            color: white;
+            height: 18.4px;
+            width: 253.5px;
+        }
+        header{
+            position: fixed;
+            background-color: rgb(40, 40, 40);
+            z-index : 10000;
+            top:0;
+            width: 100%;
+            height: 12%;
+        }
+        #section1{
+            height: 80vh;
+        }
+        p{
+            color: white;
+            float: right;
+            top: -40px;
+            position: relative;
+            font-size: 20px;
+            padding-right: 50px;
+        }
+        #p1{
+            margin-right: 10px;
+        }
+        #p3{
+            margin-right: 30px;
+        }
+        h2{
+            text-align: center;
+            font-size: 60px;
+            margin-top: 250px;
+        }
+        #h41{
+            margin: 15px 550px;
+        }
+        #b3{
+            margin: 10px 580px;
+            height: 60px;
+            width: 250px;
+            border-radius: 5px;
+            font-size: 25px;
+            background-color: blue;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+            color: white;
+        }
+        #section2{
+            border: 1px solid black;
+            height: 90vh;
+        }
+        #Para2{
+            margin: 75px 450px;
+            color: black;
+            height: 100px;
+            width: 500px;
+            font-size: 40px;
+        }
+        #pr1{
+            color: black;
+            margin: 25px -100px;
+            padding-left: -100px;
+            font-size: large;
+            height: 40px;
+            width: 200px;
+        }
+        #pr2{
+            color: black;
+            margin: 80px -20px;
+            font-size: large;
+            height: 40px;
+            width: 200px;
+        }
+        #pr3{
+            color: black;
+            font-size: larger;
+            height: 40px;
+            width: 200px;
+        }
+        #MainDiv{
+            display: flex;
+            height: 681.28px;
+        }
+        #Sp1{
+            padding-top: 30px;
+            margin: 120px 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 500px;
+            width: 400px;
+            background-color: lightblue;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3)
+        }
+        #Sp2{
+            padding-top: 30px;
+            margin: 120px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 500px;
+            width: 400px;
+            background-color: lightblue;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        #Sp3{
+            padding-top: 30px;
+            margin: 120px 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 500px;
+            width: 400px;
+            background-color: lightblue;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .li1{
+            margin-left: 30px;
+            padding: 15px 0px;
+            
+        }
+        .b1{
+            margin-top: 20px;
+            margin-left: 5px;
+            font-size: 25px;
+            text-align: center;
+            height: 35px;
+            width: 350px;
+            border-radius: 15px;
+            cursor: pointer;
+            animation:1s ease forwards;
+            background-color: lightpink;
+        }
+        .b1:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>MusicUp</h3>
+            <a href="SignTemplate.html" target="_blank">
+                <p id="p1">Sign Up</p>
+            </a>
+            <a href="LoginTemplatePart2.html" target="_blank">
+                <p id="p2">Login</p>
+            </a>
+            <a onclick="scrollToNext1()" style="cursor: pointer;">
+                <p id="p3">Home</p>
+            </a>
+            <a href="DownloadFreeSong.html" target="_blank">
+                <p id="p4" >Download</p>
+            </a>
+            <a onclick="scrollToNext()" style="cursor: pointer;">
+                <p id="p5">Premium</p>
+            </a>
+            <a href="FeedBackForm.html" style="cursor: pointer;" target="_blank">
+                <p id="p5">FeedBack</p>
+            </a>
+    </header>
+    <body style="background-color: rgb(241, 234, 219)">
+        <section id="section1">
+            <h2 >Music EveryWhere</h2>
+            <h4 id="h41">Listen Free Music and Feel Free to Download</h4>
+            <a href="StartAfreeTrial.html" target="_blank">
+                <button id="b3">Start Free Trial</button>
+            </a>
+        </section>
+        <section id="section2">
+            <p id="Para2">MusicUp Premium Package</p>
+            <div id="MainDiv">
+                <div id="Sp1" >
+                    <a style="font-size: 20px;padding-left: 30px;">Premium</a><br>
+                    <a style="font-size: 30px;padding-left: 30px;">Individual</a>
+                    <pre style="margin-top: 20px;font-size: 18px;">
+          ₹121 for 2 months
+          ₹71 per month
+                    </pre>
+                    <hr>
+                    <li class="li1">1 Premium Account</li>
+                    <li class="li1">Cancel Anytime</li>
+                    <li class="li1">Subscribe or one-time payment</li>
+                    <button class="b1">Try for 2 Months at ₹121</button><br><br>
+                    <button class="b1">One Time Payment</button><br>
+                    <a style="font-size: 10px;margin-left:20px;">₹121 for 2 months, then ₹71 per month after.</a>
+                </div>
+                <div id="Sp2" >
+                    <a style="font-size: 20px;padding-left: 30px;">Premium</a><br>
+                    <a style="font-size: 30px;padding-left: 30px;">Duo</a>
+                    <pre style="margin-top: 20px;font-size: 18px;">
+          ₹191 for 2 months
+          ₹51 per month
+                    </pre>
+                    <hr>
+                    <li class="li1">Upto 2 Premium Account</li>
+                    <li class="li1">Cancel Anytime</li>
+                    <li class="li1">Subscribe or one-time payment</li>
+                    <button class="b1">Try for 2 Months at ₹25</button><br><br>
+                    <button class="b1">One Time Payment</button><br>
+                    <a style="font-size: 10px;margin-left:20px;">₹191 for 2 months, then ₹51 per month after.</a>
+                </div>
+                <div id="Sp3" >
+                    <a style="font-size: 20px;padding-left: 30px;">Premium</a><br>
+                    <a style="font-size: 30px;padding-left: 30px;">Family</a>
+                    <pre style="margin-top: 20px;font-size: 18px;">
+          ₹150 for 2 months
+          ₹41 per month
+                    </pre>
+                    <hr>
+                    <li class="li1">Upto 6 Premium Account</li>
+                    <li class="li1">Cancel Anytime</li>
+                    <li class="li1">Subscribe or one-time payment</li>
+                    <button class="b1">Try for 2 Months at ₹150</button><br><br>
+                    <button class="b1">One Time Payment</button><br>
+                    <a style="font-size: 10px;margin-left:20px;">₹150 for 2 months, then ₹41 per month after.</a>
+                </div>
+            </div>
+        </section>
+        <script>
+            function scrollToNext() {
+              const nextPage = document.getElementById('section2');
+              nextPage.scrollIntoView({ behavior: 'smooth' });
+            }
+            function scrollToNext1() {
+              window.scrollTo({top:0,behavior : "smooth"})
+            }
+          </script>
+    </body>
+</html>
